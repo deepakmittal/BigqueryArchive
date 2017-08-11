@@ -12,6 +12,12 @@ include_once __DIR__ . '/BigqueryArchive.php';
 **You must have google cloud sdk installed and configured**
 https://cloud.google.com/sdk/docs/
 
+Provide 777 access to folder 'schema'
+```
+chmod -R 777 schemas/
+```
+Once a table is backed up, it's data is available at location gs://\<bucket\>/\<dataset\>/\<table\>/*.gz
+
 ## Usage
 
 ```
